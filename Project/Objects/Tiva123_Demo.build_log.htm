@@ -1,0 +1,228 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: 礦ision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 111 111, 111, LIC=HN02Z-J5AXN-73AM8-3NDP2-8PH1Z-U5ZWE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain Path:  D:\Program\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+C:\Users\45478\Desktop\Triz_Fly_129_0.1\Project\Tiva129_Demo.uvprojx
+Project File Date:  07/19/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Program\MDK\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling Attitude.c...
+compiling Altitude.c...
+compiling Task_Scheduler.c...
+compiling Fly_Data.c...
+compiling Motor.c...
+compiling Ano_DT.c...
+compiling height_fuse.c...
+..\Code\APP\Data_Process\height_fuse.c(22): warning:  #550-D: variable "pre_spl_height" was set but never used
+      static float pre_spl_height;
+..\Code\APP\Data_Process\height_fuse.c: 1 warning, 0 errors
+compiling Point_Control.c...
+compiling Drv_time.c...
+compiling Drv_uart.c...
+..\Code\BSP\Drv_usart\Drv_uart.c(204): error:  #20: identifier "GPIO_PD6_U2RX" is undefined
+      GPIOPinConfigure(GPIO_PD6_U2RX);
+..\Code\BSP\Drv_usart\Drv_uart.c(205): error:  #20: identifier "GPIO_PD7_U2TX" is undefined
+      GPIOPinConfigure(GPIO_PD7_U2TX);
+..\Code\BSP\Drv_usart\Drv_uart.c(252): error:  #20: identifier "GPIO_PC6_U3RX" is undefined
+      GPIOPinConfigure(GPIO_PC6_U3RX);
+..\Code\BSP\Drv_usart\Drv_uart.c(253): error:  #20: identifier "GPIO_PC7_U3TX" is undefined
+      GPIOPinConfigure(GPIO_PC7_U3TX);
+..\Code\BSP\Drv_usart\Drv_uart.c: 0 warnings, 4 errors
+compiling Drv_ak8975.c...
+compiling Drv_icm20602.c...
+..\Code\BSP\Drv_icm20602\Drv_icm20602.c(380): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		gyro_rad_z=gyro_rad_z + gyro_rad_z_temp * 0.0025;
+..\Code\BSP\Drv_icm20602\Drv_icm20602.c: 1 warning, 0 errors
+compiling Drv_spi.c...
+..\Code\BSP\Drv_spi\Drv_spi.c(56): error:  #20: identifier "GPIO_PF0_SSI1RX" is undefined
+  		GPIOPinConfigure(GPIO_PF0_SSI1RX );
+..\Code\BSP\Drv_spi\Drv_spi.c(57): error:  #20: identifier "GPIO_PF2_SSI1CLK" is undefined
+  		GPIOPinConfigure(GPIO_PF2_SSI1CLK);
+..\Code\BSP\Drv_spi\Drv_spi.c(58): error:  #20: identifier "GPIO_PF1_SSI1TX" is undefined
+  		GPIOPinConfigure(GPIO_PF1_SSI1TX);
+..\Code\BSP\Drv_spi\Drv_spi.c: 0 warnings, 3 errors
+compiling Drv_pwm.c...
+..\Code\BSP\Drv_pwm\Drv_pwm.c(16): warning:  #223-D: function "ROM_PWMPulseWidthSet" declared implicitly
+      ROM_PWMPulseWidthSet(PWM1_BASE, PWM_OUT_0, high[0]);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(25): warning:  #223-D: function "ROM_SysCtlPWMClockSet" declared implicitly
+      ROM_SysCtlPWMClockSet(SYSCTL_PWMDIV_4);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(27): warning:  #223-D: function "ROM_SysCtlPeripheralEnable" declared implicitly
+      ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(32): warning:  #223-D: function "ROM_GPIOPinConfigure" declared implicitly
+      ROM_GPIOPinConfigure(GPIO_PE5_M1PWM3);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(32): error:  #20: identifier "GPIO_PE5_M1PWM3" is undefined
+      ROM_GPIOPinConfigure(GPIO_PE5_M1PWM3);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(33): error:  #20: identifier "GPIO_PE4_M1PWM2" is undefined
+      ROM_GPIOPinConfigure(GPIO_PE4_M1PWM2);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(34): error:  #20: identifier "GPIO_PD1_M1PWM1" is undefined
+      ROM_GPIOPinConfigure(GPIO_PD1_M1PWM1);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(35): error:  #20: identifier "GPIO_PD0_M1PWM0" is undefined
+      ROM_GPIOPinConfigure(GPIO_PD0_M1PWM0);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(37): warning:  #223-D: function "ROM_GPIOPinTypePWM" declared implicitly
+      ROM_GPIOPinTypePWM(GPIO_PORTE_BASE, GPIO_PIN_5);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(42): warning:  #223-D: function "ROM_PWMGenConfigure" declared implicitly
+      ROM_PWMGenConfigure(PWM1_BASE, PWM_GEN_0,PWM_GEN_MODE_DOWN | PWM_GEN_MODE_NO_SYNC);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(46): warning:  #223-D: function "ROM_PWMGenPeriodSet" declared implicitly
+      ROM_PWMGenPeriodSet(PWM1_BASE, PWM_GEN_0, PWM_LOAD_VALUE);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(50): warning:  #223-D: function "ROM_PWMPulseWidthSet" declared implicitly
+      ROM_PWMPulseWidthSet(PWM1_BASE, PWM_OUT_0, PWM_IDLE_HIGH);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(56): warning:  #223-D: function "ROM_PWMGenEnable" declared implicitly
+      ROM_PWMGenEnable(PWM1_BASE, PWM_GEN_0);
+..\Code\BSP\Drv_pwm\Drv_pwm.c(60): warning:  #223-D: function "ROM_PWMOutputState" declared implicitly
+      ROM_PWMOutputState(PWM1_BASE, (PWM_OUT_0_BIT), true);
+..\Code\BSP\Drv_pwm\Drv_pwm.c: 10 warnings, 4 errors
+compiling Drv_spl06.c...
+..\Code\BSP\Drv_spl06\Drv_spl06.c(65): warning:  #111-D: statement is unreachable
+  		Drv_Spl0601_OffsetGet();
+..\Code\BSP\Drv_spl06\Drv_spl06.c(85): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	spl_height_offset=spl_heigt_offset_sum/10.0;
+..\Code\BSP\Drv_spl06\Drv_spl06.c(407): warning:  #177-D: function "spl0601_start_pressure" was declared but never referenced
+  static void spl0601_start_pressure(void)
+..\Code\BSP\Drv_spl06\Drv_spl06.c(387): warning:  #177-D: function "spl0601_start_temperature" was declared but never referenced
+  static void spl0601_start_temperature(void)
+..\Code\BSP\Drv_spl06\Drv_spl06.c: 4 warnings, 0 errors
+compiling Drv_us100.c...
+..\Code\BSP\Drv_us100\Drv_us100.c(26): error:  #20: identifier "GPIO_PC5_WT0CCP1" is undefined
+      GPIOPinConfigure(GPIO_PC5_WT0CCP1);
+..\Code\BSP\Drv_us100\Drv_us100.c: 0 warnings, 1 error
+compiling Drv_capture.c...
+..\Code\BSP\Drv_capture\Drv_capture.c(18): warning:  #223-D: function "ROM_SysCtlPeripheralEnable" declared implicitly
+      ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER1);
+..\Code\BSP\Drv_capture\Drv_capture.c(23): warning:  #223-D: function "ROM_GPIOPinTypeGPIOInput" declared implicitly
+      ROM_GPIOPinTypeGPIOInput(GPIO_PORTB_BASE, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5);
+..\Code\BSP\Drv_capture\Drv_capture.c(25): warning:  #223-D: function "ROM_GPIOPinConfigure" declared implicitly
+      ROM_GPIOPinConfigure(GPIO_PB0_T2CCP0);
+..\Code\BSP\Drv_capture\Drv_capture.c(25): error:  #20: identifier "GPIO_PB0_T2CCP0" is undefined
+      ROM_GPIOPinConfigure(GPIO_PB0_T2CCP0);
+..\Code\BSP\Drv_capture\Drv_capture.c(26): error:  #20: identifier "GPIO_PB1_T2CCP1" is undefined
+      ROM_GPIOPinConfigure(GPIO_PB1_T2CCP1);
+..\Code\BSP\Drv_capture\Drv_capture.c(27): error:  #20: identifier "GPIO_PB2_T3CCP0" is undefined
+      ROM_GPIOPinConfigure(GPIO_PB2_T3CCP0);
+..\Code\BSP\Drv_capture\Drv_capture.c(28): error:  #20: identifier "GPIO_PB4_T1CCP0" is undefined
+      ROM_GPIOPinConfigure(GPIO_PB4_T1CCP0);
+..\Code\BSP\Drv_capture\Drv_capture.c(29): error:  #20: identifier "GPIO_PB5_T1CCP1" is undefined
+      ROM_GPIOPinConfigure(GPIO_PB5_T1CCP1);
+..\Code\BSP\Drv_capture\Drv_capture.c(30): error:  #20: identifier "GPIO_PB3_T3CCP1" is undefined
+      ROM_GPIOPinConfigure(GPIO_PB3_T3CCP1);
+..\Code\BSP\Drv_capture\Drv_capture.c(32): warning:  #223-D: function "ROM_GPIOPinTypeTimer" declared implicitly
+      ROM_GPIOPinTypeTimer(GPIO_PORTB_BASE, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5);
+..\Code\BSP\Drv_capture\Drv_capture.c(35): warning:  #223-D: function "ROM_TimerPrescaleSet" declared implicitly
+      ROM_TimerPrescaleSet(TIMER1_BASE, TIMER_A, 255);
+..\Code\BSP\Drv_capture\Drv_capture.c(43): warning:  #223-D: function "ROM_TimerConfigure" declared implicitly
+      ROM_TimerConfigure(TIMER1_BASE, TIMER_CFG_B_CAP_TIME_UP | TIMER_CFG_A_CAP_TIME_UP | TIMER_CFG_SPLIT_PAIR); //??时捕??模式，?????夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(47): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+      ROM_TimerControlEvent(TIMER1_BASE, TIMER_A, TIMER_EVENT_POS_EDGE); //捕??模式，A定时?鳎??????夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(77): warning:  #223-D: function "ROM_TimerEnable" declared implicitly
+      ROM_TimerEnable(TIMER1_BASE, TIMER_A);
+..\Code\BSP\Drv_capture\Drv_capture.c(100): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER1_BASE, TIMER_A, TIMER_EVENT_NEG_EDGE); //捕??模式，A定时?鳎??陆??夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(106): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER1_BASE, TIMER_A, TIMER_EVENT_POS_EDGE); //捕??模式，A定时?鳎??????夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(126): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER1_BASE, TIMER_B, TIMER_EVENT_NEG_EDGE); //捕??模式，A定时?鳎??陆??夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(132): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER1_BASE, TIMER_B, TIMER_EVENT_POS_EDGE); //捕??模式，A定时?鳎??????夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(152): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER2_BASE, TIMER_A, TIMER_EVENT_NEG_EDGE); //捕??模式，A定时?鳎??陆??夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(158): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER2_BASE, TIMER_A, TIMER_EVENT_POS_EDGE); //捕??模式，A定时?鳎??????夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(178): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER2_BASE, TIMER_B, TIMER_EVENT_NEG_EDGE); //捕??模式，A定时?鳎??陆??夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(184): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER2_BASE, TIMER_B, TIMER_EVENT_POS_EDGE); //捕??模式，A定时?鳎??????夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(203): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER3_BASE, TIMER_A, TIMER_EVENT_NEG_EDGE); //捕??模式，A定时?鳎??陆??夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(213): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER3_BASE, TIMER_A, TIMER_EVENT_POS_EDGE); //捕??模式，A定时?鳎??????夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(232): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER3_BASE, TIMER_B, TIMER_EVENT_NEG_EDGE); //捕??模式，A定时?鳎??陆??夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c(238): warning:  #223-D: function "ROM_TimerControlEvent" declared implicitly
+          ROM_TimerControlEvent(TIMER3_BASE, TIMER_B, TIMER_EVENT_POS_EDGE); //捕??模式，A定时?鳎??????夭痘?
+..\Code\BSP\Drv_capture\Drv_capture.c: 20 warnings, 6 errors
+compiling Drv_camara.c...
+compiling adc.c...
+compiling comp.c...
+compiling aes.c...
+compiling can.c...
+compiling crc.c...
+compiling cpu.c...
+compiling des.c...
+compiling eeprom.c...
+compiling epi.c...
+compiling emac.c...
+compiling fpu.c...
+compiling flash.c...
+compiling gpio.c...
+compiling hibernate.c...
+compiling i2c.c...
+compiling interrupt.c...
+compiling mpu.c...
+compiling lcd.c...
+compiling onewire.c...
+compiling qei.c...
+compiling shamd5.c...
+compiling pwm.c...
+compiling sw_crc.c...
+compiling ssi.c...
+compiling sysexc.c...
+compiling systick.c...
+compiling sysctl.c...
+compiling uart.c...
+compiling timer.c...
+compiling udma.c...
+compiling watchdog.c...
+compiling usb.c...
+compiling main.c...
+compiling system_TM4C12x.c...
+..\Code\Tivaware\system_TM4C12x.c(27): warning:  #550-D: variable "rcc_clock" was set but never used
+  		uint32_t rcc_clock;
+..\Code\Tivaware\system_TM4C12x.c: 1 warning, 0 errors
+compiling my_math.c...
+..\Code\Common\Math\my_math.c(175): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		    float half_x = 0.5 * x;
+..\Code\Common\Math\my_math.c(179): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		    x = x*(1.5 - (half_x * x * x)); // 牛?俚?一???岣呔?
+..\Code\Common\Math\my_math.c: 2 warnings, 0 errors
+compiling imu.c...
+..\Code\Common\IMU\imu.c(168): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_data[2]=gyro_rad_z*
+ad_to_angle*0.348;
+..\Code\Common\IMU\imu.c(173): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_data[2]=gyro_rad_z*
+ad_to_angle*0.348 + 0.0000002 * N;
+..\Code\Common\IMU\imu.c: 2 warnings, 0 errors
+compiling filter.c...
+compiling Pid.c...
+".\Objects\Tiva123_Demo.axf" - 18 Error(s), 41 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\45478\Desktop\Triz_Fly_129_0.1\Project\RTE
+  D:\Program\MDK\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
